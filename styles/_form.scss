@@ -19,10 +19,6 @@
     &::placeholder {
         @include m.font(25px, 100, v.$color_grey);
     }
-
-    @media (max-width: v.$media_xl) {
-        padding: 200px 15px 240px 15px;
-    }
 }
 
 .form-section {
@@ -46,6 +42,10 @@
         height: 360px;
         margin: 0 auto;
         @include m.d-flex(center, center, nowrap, row, 0, 0);
+    }
+
+    @media (max-width: v.$media_xl) {
+        padding: 200px 15px 240px 15px;
     }
 }
 
